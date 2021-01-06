@@ -1,0 +1,4 @@
+include ':kotlinui'
+include ':app'
+rootProject.name = "UI Tests"
+project(":kotlinui").projectDir=new File(rootDir, "../KotlinUI/kotlinui")

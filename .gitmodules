@@ -1,0 +1,3 @@
+[submodule "KotlinUI"]
+	path = KotlinUI
+	url = git@github.com:bclnet/KotlinUI.git

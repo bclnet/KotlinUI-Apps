@@ -1,0 +1,4 @@
+include ':kotlinui'
+include ':app'
+rootProject.name = "SwiftUI Tutorials"
+project(":kotlinui").projectDir=new File(rootDir, "../KotlinUI/kotlinui")
