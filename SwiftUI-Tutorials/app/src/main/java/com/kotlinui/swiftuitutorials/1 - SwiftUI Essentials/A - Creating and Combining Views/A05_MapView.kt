@@ -3,9 +3,9 @@ package com.kotlinui.swiftuitutorials
 import kotlinx.kotlinui.*
 import kotlinx.kotlinuijson.*
 
-class A05_MapView: UIViewRepresentable {
+class A05_MapView : UIViewRepresentable {
     //var base = BaseView(Self.self)
-    override val body: View = Text("TODO")
+    override val body: View get() = Text("TODO")
 
 //    fun makeUIView(context: Context) : MKMapView {
 //        MKMapView(frame: .zero)
@@ -20,11 +20,12 @@ class A05_MapView: UIViewRepresentable {
 //    }
 }
 
-object A05_MapView_Previews: PreviewProvider {
-    override val previews: View =
-        JsonPreview {
-            A05_MapView()
-        }
+object A05_MapView_Previews : PreviewProvider {
+    override val previews: View
+        get() =
+            JsonPreview {
+                A05_MapView()
+            }
 }
 
 //extension A05_MapView: JsonView {

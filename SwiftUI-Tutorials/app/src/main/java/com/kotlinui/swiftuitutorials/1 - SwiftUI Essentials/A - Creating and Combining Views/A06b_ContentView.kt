@@ -4,26 +4,28 @@ import kotlinx.kotlinui.*
 import kotlinx.kotlinuijson.*
 
 class A06b_ContentView : View {
-    override val body: View =
-        VStack {
-            VStack(alignment = HorizontalAlignment.leading) {
-                Text("Turtle Rock")
-                    .font(Font.title)
-                HStack(alignment = VerticalAlignment.top) {
-                    Text("Joshua Tree National Park")
-                        .font(Font.subheadline)
-                    Spacer()
-                    Text("California")
-                        .font(Font.subheadline)
+    override val body: View
+        get() =
+            VStack {
+                VStack(alignment = HorizontalAlignment.leading) {
+                    Text("Turtle Rock")
+                        .font(Font.title)
+                    HStack(alignment = VerticalAlignment.top) {
+                        Text("Joshua Tree National Park")
+                            .font(Font.subheadline)
+                        Spacer()
+                        Text("California")
+                            .font(Font.subheadline)
+                    }
                 }
+                    .padding()
             }
-                .padding()
-        }
 }
 
 object A06b_ContentView_Previews : PreviewProvider {
-    override val previews: View =
-        JsonPreview {
-            A06b_ContentView()
-        }
+    override val previews: View
+        get() =
+            JsonPreview {
+                A06b_ContentView()
+            }
 }

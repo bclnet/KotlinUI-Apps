@@ -4,13 +4,15 @@ import kotlinx.kotlinui.*
 import kotlinx.kotlinuijson.*
 
 class A01a_ContentView : View {
-    override val body: View =
-        Text("Hello World")
+    override val body: View
+        get() =
+            Text("Hello World")
 }
 
 object A01a_ContentView_Previews : PreviewProvider {
-    override val previews: View =
-        JsonPreview {
+    override val previews: View
+        get() =
+            JsonPreview {
             A01a_ContentView()
         }
 }
