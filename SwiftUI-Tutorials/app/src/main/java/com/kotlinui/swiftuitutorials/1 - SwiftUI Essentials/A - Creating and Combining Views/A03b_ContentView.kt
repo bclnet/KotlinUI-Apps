@@ -7,10 +7,12 @@ class A03b_ContentView : View {
     override val body: View
         get() =
             VStack {
-                Text("Turtle Rock")
-                    .font(Font.title)
-                Text("Joshua Tree National Park")
-                    .font(Font.subheadline)
+                get(
+                    Text("Turtle Rock")
+                        .font(Font.title),
+                    Text("Joshua Tree National Park")
+                        .font(Font.subheadline)
+                )
             }
 }
 

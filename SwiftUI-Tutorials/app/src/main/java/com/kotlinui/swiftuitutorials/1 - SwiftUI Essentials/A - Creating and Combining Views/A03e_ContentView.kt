@@ -7,15 +7,19 @@ class A03e_ContentView : View {
     override val body: View
         get() =
             VStack(alignment = HorizontalAlignment.leading) {
-                Text("Turtle Rock")
-                    .font(Font.title)
-                HStack {
-                    Text("Joshua Tree National Park")
-                        .font(Font.subheadline)
-                    Spacer()
-                    Text("California")
-                        .font(Font.subheadline)
-                }
+                get(
+                    Text("Turtle Rock")
+                        .font(Font.title),
+                    HStack {
+                        get(
+                            Text("Joshua Tree National Park")
+                                .font(Font.subheadline),
+                            Spacer(),
+                            Text("California")
+                                .font(Font.subheadline)
+                        )
+                    }
+                )
             }
 }
 

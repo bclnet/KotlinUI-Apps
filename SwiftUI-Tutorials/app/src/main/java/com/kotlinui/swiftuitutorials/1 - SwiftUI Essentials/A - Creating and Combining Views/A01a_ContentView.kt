@@ -13,6 +13,6 @@ object A01a_ContentView_Previews : PreviewProvider {
     override val previews: View
         get() =
             JsonPreview {
-            A01a_ContentView()
-        }
+                A01a_ContentView()
+            }
 }
