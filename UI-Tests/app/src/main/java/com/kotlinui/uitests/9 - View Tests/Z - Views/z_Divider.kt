@@ -1,13 +1,13 @@
 package com.kotlinui.uitests
 
 import kotlinx.kotlinui.*
-import kotlinx.kotlinuijson.*
 
 class z_Divider : View {
     override val body: View =
         VStack {
-            Text("Divider")
-            Divider()
+            +Text("Divider")
+            +Divider()
+            get()
         }
 }
 

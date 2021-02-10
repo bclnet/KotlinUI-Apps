@@ -1,7 +1,6 @@
 package com.kotlinui.swiftuitutorials
 
 import kotlinx.kotlinui.*
-import kotlinx.kotlinuijson.*
 
 class A04c_CircleImage : View {
     override val body: View

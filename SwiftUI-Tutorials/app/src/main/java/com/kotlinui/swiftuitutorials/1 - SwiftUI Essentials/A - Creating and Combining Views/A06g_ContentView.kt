@@ -1,7 +1,6 @@
 package com.kotlinui.swiftuitutorials
 
 import kotlinx.kotlinui.*
-import kotlinx.kotlinuijson.*
 
 class A06g_ContentView : View {
     override val body: View
@@ -9,24 +8,24 @@ class A06g_ContentView : View {
             VStack {
                 A05_MapView()
                     .edgesIgnoringSafeArea(Edge.Set.top)
-                    .frame(height = 300f)
+                    .frame(height = 300f) +
 
                 A04e_CircleImage()
                     .offset(y = -130f)
-                    .padding(Edge.Set.bottom, -130f)
+                    .padding(Edge.Set.bottom, -130f) +
 
                 VStack(alignment = HorizontalAlignment.leading) {
                     Text("Turtle Rock")
-                        .font(Font.title)
+                        .font(Font.title) +
                     HStack(alignment = VerticalAlignment.top) {
                         Text("Joshua Tree National Park")
-                            .font(Font.subheadline)
-                        Spacer()
+                            .font(Font.subheadline) +
+                        Spacer() +
                         Text("California")
                             .font(Font.subheadline)
                     }
                 }
-                    .padding()
+                    .padding() +
 
                 Spacer()
             }

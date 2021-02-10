@@ -1,18 +1,15 @@
 package com.kotlinui.swiftuitutorials
 
 import kotlinx.kotlinui.*
-import kotlinx.kotlinuijson.*
 
 class A03b_ContentView : View {
     override val body: View
         get() =
             VStack {
-                get(
-                    Text("Turtle Rock")
-                        .font(Font.title),
-                    Text("Joshua Tree National Park")
-                        .font(Font.subheadline)
-                )
+                Text("Turtle Rock")
+                    .font(Font.title) +
+                Text("Joshua Tree National Park")
+                    .font(Font.subheadline)
             }
 }
 

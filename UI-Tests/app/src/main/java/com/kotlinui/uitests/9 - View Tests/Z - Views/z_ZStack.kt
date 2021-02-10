@@ -1,18 +1,18 @@
 package com.kotlinui.uitests
 
 import kotlinx.kotlinui.*
-import kotlinx.kotlinuijson.*
 
 class z_ZStack : View {
     override val body: View =
         VStack {
-            Text("ZStack")
-            ZStack {
+            +Text("ZStack")
+            +ZStack {
                 Text("default")
             }
-            ZStack(alignment = Alignment.top) {
+            +ZStack(alignment = Alignment.top) {
                 Text("alignment")
             }
+            get()
         }
 }
 

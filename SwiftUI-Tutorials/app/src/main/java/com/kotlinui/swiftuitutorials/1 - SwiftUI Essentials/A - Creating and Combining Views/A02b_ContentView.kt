@@ -1,7 +1,6 @@
 package com.kotlinui.swiftuitutorials
 
 import kotlinx.kotlinui.*
-import kotlinx.kotlinuijson.*
 
 class A02b_ContentView : View {
     override val body: View

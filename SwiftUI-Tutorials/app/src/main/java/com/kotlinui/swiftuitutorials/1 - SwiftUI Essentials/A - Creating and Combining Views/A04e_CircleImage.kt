@@ -1,7 +1,6 @@
 package com.kotlinui.swiftuitutorials
 
 import kotlinx.kotlinui.*
-import kotlinx.kotlinuijson.*
 
 class A04e_CircleImage : View {
     //var base = BaseView(Self.self)

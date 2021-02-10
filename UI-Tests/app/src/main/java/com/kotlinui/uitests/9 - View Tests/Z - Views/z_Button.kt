@@ -1,20 +1,21 @@
 package com.kotlinui.uitests
 
 import kotlinx.kotlinui.*
-import kotlinx.kotlinuijson.*
 
 class z_Button : View {
     override val body: View =
         VStack {
-            Text("Button")
-            VStack {
-                Button(action = { print("action") }, label = { Text("label") })
-//                Button("titleKey", action = { print("action") })
-//                Button(String("title"), action = { print("action") })
+            +Text("Button")
+            +VStack {
+                +Button(action = { print("action") }, label = { Text("label") })
+//                +Button("titleKey", action = { print("action") })
+//                +Button(String("title"), action = { print("action") })
+                get()
             }
-//            VStack {
+//            +VStack {
 //                Button("configuration", action = { print("action") }).buttonStyle(DefaultButtonStyle())
 //            }
+            get()
         }
 }
 

@@ -1,7 +1,6 @@
 package com.kotlinui.swiftuitutorials
 
 import kotlinx.kotlinui.*
-import kotlinx.kotlinuijson.*
 
 class A05_MapView : UIViewRepresentable {
     //var base = BaseView(Self.self)
